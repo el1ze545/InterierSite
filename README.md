@@ -17,4 +17,4 @@
 - Netlify для деплоя
 
 ## Ссылка на деплой проекта
-https://el1ze545.github.io/HomeWork1/
+https://el1ze545.github.io/InterierSite
