@@ -1,0 +1,294 @@
+.top-bag {
+    background-image: url(images/bag-bg.jpeg);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__title {
+        margin-top: 127px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        letter-spacing: 0%;
+    }
+
+
+    
+}
+
+.header {
+    &__nav-ul{
+        list-style-type: none;
+        display: flex;
+        gap: 32px;
+    }
+    
+    &__nav-menu {
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__nav-menu_hover:hover {
+        text-decoration: underline;
+    }
+    
+}
+
+
+.bag {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 33px;
+    margin-top: 64px;
+
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+
+    &__item {
+        border-top: 0.5px solid rgb(202, 205, 216);
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__info-title {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &__info-text {
+        width: 276px;
+        color: rgb(136, 136, 136);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+    }
+
+    &__info-price {
+        color: rgb(5, 5, 5);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+    }
+
+    &__link-box {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-decoration-line: underline;
+        transition: 0.2s;
+    }
+
+    &__link_hover:hover {
+        text-decoration: none;
+        color: rgb(136, 136, 136);
+        transition: 0.2s;
+    }
+
+    &__item-input {
+        border-radius: 6px;
+        background: rgb(247, 246, 246);
+        border: none;
+        width: 71px;
+        height: 51px;
+        color: rgb(0, 0, 0);
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-align: center; 
+    
+    }
+
+    &__item-box {
+        display: flex;
+        gap: 7px;
+        margin-top: 50px - 32px;
+    }
+
+    &__item-btn {
+        border: 1px solid rgb(0, 0, 0);
+        width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: transparent;
+        box-sizing: border-box;
+        border-radius: 50px;
+        color: rgb(2, 2, 2);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+        transition: 0.5s;
+        cursor:pointer
+    }
+
+    &__item-btn_hover:hover {
+        color: rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
+        transition: 0.5s;
+    }
+
+    &__form {
+        height: 556px;
+        border-radius: 20px;
+        background: rgb(247, 246, 246);
+        grid-column: span 4;
+    }
+
+    &__form-btn {
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    &__form-btn_hover:hover {
+        color: rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
+        transition: 0.5s;
+    }
+
+    &__form-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 42px;
+        align-items: center;
+    }
+
+    &__form-title {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    &__form-input {
+        margin-top: 35px;
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        width: 288px;
+    }
+
+    &__form-type {
+        background-color: transparent;
+        border: none;
+        border-bottom:  1px solid rgb(202, 205, 216);
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        
+    }
+
+    &__form-price {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0px;
+    }
+
+    &__form-bold {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        letter-spacing: 0px;
+        font-weight: 500;
+    }
+
+
+    &__form-btn {
+        border: 1px solid rgb(0, 0, 0);
+        margin-top: 18px;
+        width: 290px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: transparent;
+        box-sizing: border-box;
+        border-radius: 50px;
+        color: rgb(2, 2, 2);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    
+}
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
